@@ -44,11 +44,30 @@ $txtFullName = $txtFirstName + ' ' + $txtLastName;
 
 $body =
 $txtFullName . " - Your name.
+" . $txtEmail . " - Email address we can contact you at.
 
-" . $txtComments . " - Comments.";
+" . $txtComments . " - Comments.
+" . "ver 1.00.00";
 
 $_SESSION['body'] ="<p>" . $body . "</p>";
 
+// Compose a confermation message.
+
+//$bodyconfirm = "Thank you for submitting an order.
+//Here is a summary if the information that you provided:
+//"
+//. $body .
+//"
+
+//someone will be in contact with you shortly
+
+//Coustom Controllers inc.
+//585 Main Street
+//P.O. Box 12345
+//Hutchinson, MN 55350
+//Phone: 320-587-0000";
+
+// End of confirmation message.
 
 // Send the email with the data to the company email adress.
 mail('andrewstb23@gmail.com', '*** Coustomer Contact Form From DNS Website ***', $body, 
@@ -56,6 +75,11 @@ mail('andrewstb23@gmail.com', '*** Coustomer Contact Form From DNS Website ***',
     "Reply-To: \"$txtFullName\\r\n" .
     "X-Mailer: PHP/" . phpversion());
 
+// Send confirmation email with the data to the customer.
+//mail($txtEmail, 'Confirmation email - Coustom Controllers inc.', $bodyconfirm,
+    //"From: \"Coustom Controllers inc.\" <orders@brandenbuermann.info>\r\n" .
+    //"Reply-To: \"Coustom Controllers inc.\" <orders@brandenbuermann.info>\r\n" .
+    //"X-Mailer: PHP/" . phpversion());
 
 
 // This has to be a relative URL for session ID appending to work.
