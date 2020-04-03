@@ -530,6 +530,7 @@ a:hover {
     overflow: hidden;
     max-width: 324px;
     padding: 30px;
+    padding-top: 8px;
 }
 
 
@@ -539,4 +540,11 @@ a:hover {
     /*background: url(images/img04.png) no-repeat center top;*/
 }
 
-.mySlides {display:none;}
+.mySlides {
+    display:none;
+    width: 100%;
+}
+.mySlides1 {
+    display:none;
+    width: 100%;
+}
