@@ -542,9 +542,10 @@ a:hover {
 
 .mySlides {
     display:none;
-    width: 100%;
+    width: 80%;
 }
 .mySlides1 {
     display:none;
-    width: 100%;
+    width: 80%;
+    image-orientation: from-image;
 }
