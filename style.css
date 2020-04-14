@@ -1,3 +1,8 @@
+html {
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: auto;
+}
 
 body {
     margin: 0;
@@ -7,6 +12,12 @@ body {
     font-size: 13px;
     color: #8A8985;
 }
+@font-face{
+    font-family: WebsiteTitle;
+    src: url(Carnevalee_Freakshow.ttf);
+}
+
+h1 {font-family: WebsiteTitle;}
 
 h1, h2, h3 {
     margin: 0;
@@ -176,7 +187,9 @@ a:hover {
     overflow: hidden;
     height: 52px;
     margin-bottom: 2em;
+    margin: auto;
     background: #3C342E;
+    max-width: 1400px;
 }
 
 #menu {
@@ -478,17 +491,19 @@ a:hover {
 #three-column #tbox1 {
     float: left;
     max-width: 384px;
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 #three-column #tbox2 {
     float: left;
     max-width: 384px;
+    min-width: 100px;
 }
 
 #three-column #tbox3 {
     float: right;
     max-width: 384px;
+
 }
 
 .box-style {
@@ -543,6 +558,7 @@ a:hover {
 .mySlides {
     display:none;
     width: 90%;
+    image-orientation: from-image;
     margin-left: auto;
     margin-right: auto;
 }
@@ -575,7 +591,7 @@ a:hover {
 
 }
 .button-left2 {
-    margin-left: 2.5em;
+    margin-left: 1.25em;
 }
 .button-right2 {
 
