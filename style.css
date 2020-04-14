@@ -539,13 +539,47 @@ a:hover {
     height: 50px;
     /*background: url(images/img04.png) no-repeat center top;*/
 }
-
+/*Slides*/
 .mySlides {
     display:none;
-    width: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .mySlides1 {
     display:none;
     width: 80%;
+    height: 80%;
     image-orientation: from-image;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mySlides2 {
+     display:none;
+     width: 90%;
+     image-orientation: from-image;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+.button-left {
+    margin-left: 1.2em;
+}
+.button-right {
+
+}
+.button-left1 {
+    margin-left: 2.5em;
+}
+.button-right1 {
+
+}
+.button-left2 {
+    margin-left: 2.5em;
+}
+.button-right2 {
+
+}
+.w3-center {
+    text-align: center;
 }
