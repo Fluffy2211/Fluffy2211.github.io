@@ -2,6 +2,7 @@ let slideIndex = 1;
 showDivs(slideIndex);
 showDivs1(slideIndex);
 showDivs2(slideIndex);
+showDivs5(slideIndex);
 
 function plusDivs(n) {
     showDivs(slideIndex += n);
@@ -42,6 +43,20 @@ function plusDivs2(n) {
 function showDivs2(n) {
     let i;
     let x = document.getElementsByClassName("mySlides2");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+//slide 5
+function plusDivs5(n) {
+    showDivs5(slideIndex += n);
+}
+function showDivs5(n) {
+    let i;
+    let x = document.getElementsByClassName("mySlides5");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
